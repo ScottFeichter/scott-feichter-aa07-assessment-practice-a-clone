@@ -1,0 +1,164 @@
+* {
+    /* border: 2px blue dashed; */
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: "Neue Plak", sans-serif;
+    color: #6f7287;
+}
+/*
+- Button border color: #6f7287
+- Header text color: #f05537
+- Footer Background: #1e0a3c
+- Footer text color: #FFFFFF
+*/
+
+/*
+- Music `<i class="fas fa-music"></i>`
+- Health `<i class="fas fa-book-medical"></i>`
+- Outdoors `<i class="fas fa-tree"></i>`
+- Pets `<i class="fas fa-dog"></i>`
+*/
+
+
+
+body {
+    Background: #eeedf2;
+    max-width: 1024px;
+    min-width: 1024px;
+}
+
+h1 {
+    color: #f05537;
+}
+
+h2 {
+  padding: 1em 0.5em;
+}
+
+.container {
+    /* border: 1px dashed grey; */
+}
+
+#header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}
+
+#nav-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#search {
+    width: 200px;
+    height: 40px;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.nav-link {
+    color: #f05537;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.5em;
+
+}
+
+/* ---------------------------------------- */
+
+#categories-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#categories-container > a {
+    text-decoration: none;
+    padding: 1em 6em;
+    border: #6f7287 1px solid;
+    box-shadow: 5px 5px 5px grey;
+}
+
+#events-container-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas:
+    "disco tech"
+    "dance blank" ;
+}
+
+img {
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 490px;
+    min-width: 490px;
+    margin-left: 0.5em;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+
+.event-link {
+    margin-left: 1.3em;
+    margin-top: 1.5em;
+    color: #1e0a3c;
+    font-size: large;
+    font-weight: bold;
+}
+
+.date {
+    margin-left: 1.5em;
+    margin-top: 0.5em;
+}
+
+.price {
+    text-align: right;
+    margin-right: 1.8em;
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+#disco { grid-area: disco; }
+#tech { grid-area: tech; }
+#dance { grid-area: dance; }
+#blank { grid-area: blank; }
+
+
+#see-more-container{
+    /* border: #6f7287 1px solid; */
+    padding: 3em 2em;
+    text-align: center;
+}
+
+#see-more {
+    color:#6f7287;
+    text-decoration: none;
+    padding: 2em 8em;
+    border: #6f7287 1px solid;
+    box-shadow: 5px 5px 5px grey;
+}
+
+/* ---------------------------------------- */
+
+#footer-container {
+    background-color: #1e0a3c;
+    height: 5em;
+    text-align: right;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+#footer-purple p {
+    color: #FFFFFF;
+    margin-right: 1em;
+    font-size: 20px;
+    padding-top: 2em;
+}
